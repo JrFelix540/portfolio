@@ -1,0 +1,38 @@
+.body-img{
+    background: url('../../img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    color: $color-white;
+
+    &::before{
+        content: '';
+        background: rgba($color-primary, .9);
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        
+
+    }
+
+
+
+}
+.main-home{
+    margin: 50vh 0 0 10vw;
+
+
+}
+.heading__icons{
+    padding-top: 2rem;
+    
+}
+.icon{
+    margin-right: 2rem;
+    
+
+}

@@ -1,0 +1,27 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: 400;
+
+}
+a {
+    text-decoration: none;
+    color: $color-white;
+}
+ul{
+    list-style-type: none;
+}
+.heading{
+
+    &__primary{
+        font-size: 6rem;
+
+    }
+    &__secondary{
+        font-size: 3rem;
+        
+
+    }
+}
+
