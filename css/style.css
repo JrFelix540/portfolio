@@ -335,16 +335,46 @@ body {
 
 a {
   text-decoration: none;
-  color: #fff; }
+  color: #000; }
 
 ul {
   list-style-type: none; }
 
 .heading__primary {
   font-size: 6rem; }
+  .heading__primary-colored {
+    color: #03171E; }
 
 .heading__secondary {
-  font-size: 3rem; }
+  font-size: 4rem; }
+
+.heading__tertiary {
+  font-size: 2.5rem;
+  font-weight: 600; }
+
+.u-margin-medium {
+  margin: 4rem; }
+
+.u-margin-small {
+  margin: 2rem; }
+
+.u-center-text {
+  text-align: center; }
+
+.grid-of-2-unequal {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 2rem; }
+
+.grid-of-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem; }
+
+.footer {
+  padding: 2rem;
+  height: 10vh;
+  background: rgba(3, 23, 30, 0.3); }
 
 .body-img {
   background: url("../../img/background.jpg");
@@ -352,10 +382,10 @@ ul {
   background-position: center;
   background-attachment: fixed;
   width: 100%;
-  color: #fff; }
+  color: #333; }
   .body-img::before {
     content: '';
-    background: rgba(3, 23, 30, 0.9);
+    background: rgba(255, 255, 255, 0.5);
     position: absolute;
     top: 0;
     right: 0;
@@ -371,6 +401,19 @@ ul {
 
 .icon {
   margin-right: 2rem; }
+
+.main-about {
+  padding: 4rem; }
+
+.bio-pic {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: url("../img/portrait.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid 3px #03171E; }
 
 .nav__menu-hamburger {
   position: absolute;
@@ -390,7 +433,7 @@ ul {
   .nav__menu-hamburger div {
     width: 4rem;
     height: .3rem;
-    background: #fff;
+    background: #000;
     display: block;
     margin: .5rem; }
 
@@ -444,3 +487,9 @@ ul {
   text-transform: uppercase;
   font-size: 3rem;
   transition: all .4s ease-out; }
+
+.btn-text {
+  padding: .75rem 1.5rem;
+  background: #03171E;
+  color: #fff;
+  border: none; }

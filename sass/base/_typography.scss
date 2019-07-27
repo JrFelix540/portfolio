@@ -7,7 +7,7 @@ body{
 }
 a {
     text-decoration: none;
-    color: $color-white;
+    color: $color-black;
 }
 ul{
     list-style-type: none;
@@ -17,11 +17,19 @@ ul{
     &__primary{
         font-size: 6rem;
 
+        &-colored{
+            color: $color-primary;
+        }
+
     }
     &__secondary{
-        font-size: 3rem;
-        
+        font-size: 4rem;
 
+    }
+    &__tertiary{
+        font-size: 2.5rem;
+        font-weight: 600;
+        
     }
 }
 

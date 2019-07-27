@@ -4,11 +4,11 @@
     background-position: center;
     background-attachment: fixed;
     width: 100%;
-    color: $color-white;
+    color: #333;
 
     &::before{
         content: '';
-        background: rgba($color-primary, .9);
+        background: rgba($color-white, .5);
         position: absolute;
         top: 0;
         right: 0;

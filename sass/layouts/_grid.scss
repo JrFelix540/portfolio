@@ -1,0 +1,12 @@
+.grid-of-2-unequal{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2rem;
+
+}
+.grid-of-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    
+}

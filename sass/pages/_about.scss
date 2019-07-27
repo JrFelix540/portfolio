@@ -1,0 +1,14 @@
+.main-about{
+    padding: 4rem;
+}
+.bio-pic{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background: url('../img/portrait.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: solid 3px $color-primary;
+
+}
