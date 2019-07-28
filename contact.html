@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/350809aedc.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>My Projects</title>
+    <title>Contact Me</title>
 </head>
 
 <body>
@@ -35,55 +35,35 @@
 
         </nav>
     </header>
-    <main class="main-projects">
+    <main class="main-contact">
         <div class="heading u-margin-medium">
-            <h1 class="heading__primary">My <span class="heading__primary-colored">Projects</span></h1>
+            <h1 class="heading__primary">Contact <span class="heading__primary-colored">Me</span></h1>
         </div>
-        <div class="grid-of-3">
-
-            <div class="project">
-                <a href="#"><img src="img/projects/project1.jpg" alt="" class="project__img"></a>
-                <div class="u-margin-top-small">
-                    <a href="#" class="btn-project u-center-text u-margin-bottom-small">Code</a>
-                    <a href="#" class="btn-project u-center-text">Live Preview</a>
+        <div class="form__container">
+            <form action="#" class="form__contact">
+                <div class="form__column u-margin-bottom-small">
+                    <label for="name" class="form__label">Name:</label>
+                    <input type="text" name="name" class="form__input" placeholder="Name..." required>
                 </div>
-
-            </div>
-            <div class="project">
-                <a href="#"><img src="img/projects/project2.jpg" alt="" class="project__img"></a>
-                <div class="u-margin-top-small">
-                    <a href="#" class="btn-project u-center-text u-margin-bottom-small">Code</a>
-                    <a href="#" class="btn-project u-center-text">Live Preview</a>
+                <div class="form__column u-margin-bottom-small">
+                    <label for="email" class="form__label">Email:</label>
+                    <input type="email" name="email" class="form__input" placeholder="Email..." required>
                 </div>
-
-            </div>
-            <div class="project">
-                <a href="#"><img src="img/projects/project3.jpg" alt="" class="project__img"></a>
-                <div class="u-margin-top-small">
-                    <a href="#" class="btn-project u-center-text u-margin-bottom-small">Code</a>
-                    <a href="#" class="btn-project u-center-text">Live Preview</a>
+                <div class="form__column u-margin-bottom-small">
+                    <label for="subject" class="form__label">Subject:</label>
+                    <input type="text" name="subject" class="form__input" placeholder="Subject..." required>
                 </div>
-
-            </div>
-            <div class="project">
-                <a href="#"><img src="img/projects/project4.jpg" alt="" class="project__img"></a>
-                <div class="u-margin-top-small">
-                    <a href="#" class="btn-project u-center-text u-margin-bottom-small">Code</a>
-                    <a href="#" class="btn-project u-center-text">Live Preview</a>
+                <div class="form__column u-margin-bottom-small">
+                    <label for="message" class="form__label">Message:</label>
+                    <textarea name="subject" class="form__textarea" cols="30" rows="10" placeholder="Enter Your Message Here..."
+                        required></textarea>
                 </div>
-
-            </div>
-            <div class="project">
-                <a href="#"><img src="img/projects/project5.jpg" alt="" class="project__img"></a>
-                <div class="u-margin-top-small">
-                    <a href="#" class="btn-project u-center-text u-margin-bottom-small">Code</a>
-                    <a href="#" class="btn-project u-center-text">Live Preview</a>
-                </div>
-
-            </div>
-
+                <div class="u-center-text"><input type="submit" value="Send Message" class="btn"></div> 
+            </form>
 
         </div>
+
+
     </main>
     <footer class="footer">
         <div class="u-center-text">Copyright &copy; 2019</div>

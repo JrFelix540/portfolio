@@ -515,9 +515,42 @@ ul {
   color: #fff;
   border: none; }
 
-.btn-project {
+.btn-display {
   background: #03171E;
   color: #fff;
   border: none;
   padding: .75rem 1.5rem;
   display: block; }
+
+.form__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem; }
+
+.form__contact {
+  margin: 0; }
+
+.form__column {
+  display: flex;
+  flex-direction: column; }
+
+.form__label {
+  font-size: 2rem;
+  color: #03171E; }
+
+.form__input {
+  margin-bottom: 2rem;
+  width: 40rem;
+  border: 0.1rem solid #03171E;
+  height: 2rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  font-family: inherit; }
+
+.form__textarea {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  border: 0.1rem solid #03171E;
+  font-family: inherit; }

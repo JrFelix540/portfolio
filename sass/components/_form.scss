@@ -1,0 +1,35 @@
+.form {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  &__contact {
+    margin: 0;
+  }
+  &__column {
+    display: flex;
+    flex-direction: column;
+  }
+  &__label {
+    font-size: 2rem;
+    color: $color-primary;
+  }
+  &__input {
+    margin-bottom: 2rem;
+    width: 40rem;
+    border: 0.1rem solid $color-primary;
+    height: 2rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    font-family: inherit;
+  }
+  &__textarea{
+    margin-bottom: 2rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: 0.1rem solid $color-primary;
+    font-family: inherit;
+  }
+}
