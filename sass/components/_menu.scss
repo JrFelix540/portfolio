@@ -1,110 +1,125 @@
-.nav__menu{
+.nav__menu {
+  &-hamburger {
+    position: fixed;
+    top: 5rem;
+    right: 5rem;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.4s;
+    &.close {
+      transform: rotate(180deg);
 
-    &-hamburger{
-        position: absolute;
-        top: 5rem;
-        right: 5rem;
-        cursor: pointer;
-        z-index: 2;
-        transition: all .4s;
-        &.close{
-            transform: rotate(180deg);
-
-           .nav__menu-line{
-            &:nth-child(1) {
-                transform: rotate(45deg) translate(5px, 5px);
-              }
-              // Line Two - Hide
-              &:nth-child(2) {
-                opacity: 0;
-              }
-              &:nth-child(3) {
-                transform: rotate(-45deg) translate(7px, -6px);
-              }
-              //Line Three - Rotate
-            
-           }
+      .nav__menu-line {
+        &:nth-child(1) {
+          transform: rotate(45deg) translate(5px, 5px);
         }
-
-        div{
-            width: 4rem;
-            height: .3rem;
-            background: $color-black;
-            display: block;
-            margin: .5rem;
+        // Line Two - Hide
+        &:nth-child(2) {
+          opacity: 0;
         }
-    }
-    &-overlay{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        opacity: .9;
-        visibility: hidden;
-
-        &.show{
-            visibility: visible;
+        &:nth-child(3) {
+          transform: rotate(-45deg) translate(7px, -6px);
         }
+        //Line Three - Rotate
+      }
     }
-    &-portrait,
-    &-list{
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        justify-content: center;
-        float: left;
-        width: 50%;
-        height: 100vh;
-        overflow: hidden;
 
-
+    div {
+      width: 4rem;
+      height: 0.3rem;
+      background: $color-black;
+      display: block;
+      margin: 0.5rem;
     }
-    &-list{
-        background: darken($color-primary, 3);
-        transition: all .4s ease-out;
-        transform: translate3d(0, 100%, 0);
+  }
+  &-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.9;
+    visibility: hidden;
 
-        &.show{
-            transform: translate3d(0,0,0);
-
-        }
+    &.show {
+      visibility: visible;
     }
-    &-portrait{
-        background: $color-primary;
-        transition: all .4s ease-out;
-        transform: translate3d(0, -100%, 0);
-        &.show{
-            transform: translate3d(0,0,0);
-        }
+  }
+  &-portrait,
+  &-list {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    @include mediaMd {
+      float: none;
+      width: 100%;
+      min-height: 0;
 
+      &.show {
+        transform: translate3d(0, 0, 0);
+      }
     }
-    &-image{
-        height: 250px;
-        width: 250px;
-        border-radius: 50%;
-        background: url('../../img/portrait.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+  }
+
+  &-list {
+    background: darken($color-primary, 3);
+    transition: all 0.4s ease-out;
+    transform: translate3d(0, 100%, 0);
+    @include mediaMd{
+        height: 75vh;
+        font-size: 2.4rem;
+        transform: translate3d(-100%, 0, 0);
+
         
     }
-   
-    
-    &-link{
-        color: $color-white;
-        display: block;
-        margin: 1.5rem 0;
-        text-transform: uppercase;
-        font-size: 3rem;
-        transition: all .4s ease-out;
-
-        &:hover{
-            // color: $color-primary;
-        }
-
-
+    &.show {
+      transform: translate3d(0, 0, 0);
+      
     }
+  }
+  &-portrait {
+    background: $color-primary;
+    transition: all 0.4s ease-out;
+    transform: translate3d(0, -100%, 0);
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+    @include mediaMd {
+      height: 25vh;
+      transform: translate3d(100%, 0, 0);
+    }
+  }
+  &-image {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background: url("../../img/portrait.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
+    @include mediaMd {
+      height: 100px;
+      width: 100px;
+      background: url("../../img/portrait_small.jpg");
+      background-position: center;
+    }
+  }
 
+  &-link {
+    color: $color-white;
+    display: block;
+    margin: 1.5rem 0;
+    text-transform: uppercase;
+    font-size: 3rem;
+    transition: all 0.4s ease-out;
 
+    &:hover {
+      // color: $color-primary;
+    }
+  }
 }

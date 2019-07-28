@@ -16,6 +16,9 @@ ul{
 
     &__primary{
         font-size: 6rem;
+        @include mediaMd{
+            font-size: 4rem;
+        }
 
         &-colored{
             color: $color-primary;
@@ -24,6 +27,9 @@ ul{
     }
     &__secondary{
         font-size: 4rem;
+        @include mediaMd{
+            font-size: 2.5rem;
+        }
 
     }
     &__tertiary{
