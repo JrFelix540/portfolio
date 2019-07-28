@@ -1,6 +1,16 @@
-.btn-text{
+.btn{
     padding: .75rem 1.5rem;
     background: $color-primary;
     color: $color-white;
     border: none;
+}
+.btn-project{
+    background: $color-primary;
+    color: $color-white;
+    border: none;
+    padding: .75rem 1.5rem;
+    display: block;
+    
+
+
 }

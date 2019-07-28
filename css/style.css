@@ -358,8 +358,17 @@ ul {
 .u-margin-small {
   margin: 2rem; }
 
+.u-margin-top-small {
+  margin-top: 1rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1rem; }
+
 .u-center-text {
   text-align: center; }
+
+.u-padding-small {
+  padding: 2rem; }
 
 .grid-of-2-unequal {
   display: grid;
@@ -368,7 +377,12 @@ ul {
 
 .grid-of-3 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  grid-template-columns: repeat(3, 1fr); }
+
+.grid-of-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem; }
 
 .footer {
@@ -414,6 +428,13 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   border: solid 3px #03171E; }
+
+.main-projects {
+  padding: 2rem; }
+
+.project__img {
+  width: 100%;
+  border: solid 3px #fff; }
 
 .nav__menu-hamburger {
   position: absolute;
@@ -488,8 +509,15 @@ ul {
   font-size: 3rem;
   transition: all .4s ease-out; }
 
-.btn-text {
+.btn {
   padding: .75rem 1.5rem;
   background: #03171E;
   color: #fff;
   border: none; }
+
+.btn-project {
+  background: #03171E;
+  color: #fff;
+  border: none;
+  padding: .75rem 1.5rem;
+  display: block; }
