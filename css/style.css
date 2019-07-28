@@ -405,7 +405,7 @@ ul {
   background: rgba(3, 23, 30, 0.3); }
 
 .body-img {
-  background: url("../../img/background.jpg");
+  background: url("../img/background.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -532,7 +532,7 @@ ul {
   height: 250px;
   width: 250px;
   border-radius: 50%;
-  background: url("../../img/portrait.jpg");
+  background: url("../img/portrait.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -540,7 +540,7 @@ ul {
     .nav__menu-image {
       height: 100px;
       width: 100px;
-      background: url("../../img/portrait_small.jpg");
+      background: url("../img/portrait_small.jpg");
       background-position: center; } }
 
 .nav__menu-link {

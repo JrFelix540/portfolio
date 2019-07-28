@@ -74,7 +74,7 @@
         font-size: 2.4rem;
         transform: translate3d(-100%, 0, 0);
 
-        
+
     }
     &.show {
       transform: translate3d(0, 0, 0);
@@ -97,7 +97,7 @@
     height: 250px;
     width: 250px;
     border-radius: 50%;
-    background: url("../../img/portrait.jpg");
+    background: url("../img/portrait.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -105,7 +105,7 @@
     @include mediaMd {
       height: 100px;
       width: 100px;
-      background: url("../../img/portrait_small.jpg");
+      background: url("../img/portrait_small.jpg");
       background-position: center;
     }
   }
