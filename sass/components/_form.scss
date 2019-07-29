@@ -15,6 +15,9 @@
   &__label {
     font-size: 2rem;
     color: $color-primary;
+    @include mediaSm{
+      font-size: 1.6rem;
+    }
   }
   &__input {
     margin-bottom: 2rem;
@@ -24,6 +27,10 @@
     padding: 1rem;
     font-size: 1.6rem;
     font-family: inherit;
+    @include mediaSm{
+      width: 25rem;
+      
+    }
   }
   &__textarea{
     margin-bottom: 2rem;

@@ -6,6 +6,11 @@
     cursor: pointer;
     z-index: 2;
     transition: all 0.4s;
+    @include mediaSm{
+      top: 2rem;
+      right: 2rem;
+      
+    }
     &.close {
       transform: rotate(180deg);
 

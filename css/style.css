@@ -463,6 +463,10 @@ ul {
   cursor: pointer;
   z-index: 2;
   transition: all 0.4s; }
+  @media screen and (max-width: 500px) {
+    .nav__menu-hamburger {
+      top: 2rem;
+      right: 2rem; } }
   .nav__menu-hamburger.close {
     transform: rotate(180deg); }
     .nav__menu-hamburger.close .nav__menu-line:nth-child(1) {
@@ -580,6 +584,9 @@ ul {
 .form__label {
   font-size: 2rem;
   color: #03171E; }
+  @media screen and (max-width: 500px) {
+    .form__label {
+      font-size: 1.6rem; } }
 
 .form__input {
   margin-bottom: 2rem;
@@ -589,6 +596,9 @@ ul {
   padding: 1rem;
   font-size: 1.6rem;
   font-family: inherit; }
+  @media screen and (max-width: 500px) {
+    .form__input {
+      width: 25rem; } }
 
 .form__textarea {
   margin-bottom: 2rem;
